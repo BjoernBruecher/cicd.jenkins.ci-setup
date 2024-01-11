@@ -1,0 +1,30 @@
+/* Jenkinsfile (Declarative Pipeline) */
+pipeline {
+    agent any 
+    stages {
+        stage('Build') { 
+            steps {
+                print 'This is build stage step 1'
+            }
+            steps {
+                print 'This is build stage step 2'
+            }
+        }
+        stage('Test') { 
+            steps {
+                print 'This is test stage step 1'
+            }
+            steps {
+                print 'This is test stage step 2'
+            }
+        }
+        stage('Deploy') { 
+            steps {
+                print 'This is deploy stage step 1'
+            }
+            steps {
+                print 'This is deploy stage step 2'
+            }
+        }
+    }
+}
