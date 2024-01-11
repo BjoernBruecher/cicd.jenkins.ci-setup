@@ -1,2 +1,2 @@
-# cicd.jenkins.ci-setup
+# CI - Setup
 Jenkins CI-Setup
