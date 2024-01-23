@@ -7,12 +7,12 @@ pipeline {
             steps {
                 script {
                     print 'This is source stage step 1...'
-                    sleep 10
+                    sleep 2
                     print 'done.'
                 }
                 script {
                     print 'This is source stage step 2'
-                    sleep 10
+                    sleep 2
                     print 'done.'
                 }
             }
@@ -22,12 +22,12 @@ pipeline {
             steps {
                 script {
                     print 'This is build stage step 1...'
-                    sleep 10
+                    sleep 2
                     print 'done.'
                 }
                 script {
                     print 'This is build stage step 2'
-                    sleep 10
+                    sleep 2
                     print 'done.'
                 }
             }
@@ -35,14 +35,14 @@ pipeline {
         
         stage('Test') { 
             steps {
-                    script {
+                script {
                     print 'This is test stage step 1'
-                    sleep 10
+                    sleep 2
                     print 'done.'
                 }
                 script {
                     print 'This is test stage step 2'
-                    sleep 10
+                    sleep 2
                     print 'done.'
                 }
             }
@@ -52,12 +52,12 @@ pipeline {
             steps {
                 script {
                     print 'This is deploy stage step 1'
-                    sleep 10
+                    sleep 2
                     print 'done.'
                 }
                 script {
                     print 'This is deploy stage step 2'
-                    sleep 10
+                    sleep 2
                     print 'done.'
                 }
             }
