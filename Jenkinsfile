@@ -15,6 +15,11 @@ pipeline {
                     sleep 2
                     print 'done.'
                 }
+                script {
+                    print 'This is source stage step 3'
+                    sleep 2
+                    print 'done.'
+                }
             }
         }
         
