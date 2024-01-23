@@ -1,19 +1,7 @@
-// Jenkinsfile
-pipeline {
-    agent any
-    // Import DSL parameters from the external file
-    @Grab('file://path/to/DSLParameters.groovy')
-    import DSLParameters
-
-    stages {
-        stage('Build') {
-            steps {
-                script {
-                    // Import the DSL parameters
-                    DSLParameters()
 /* Jenkinsfile (Declarative Pipeline) */
 pipeline {
     agent any 
+    
     stages {
         stage('Source') { 
             steps {
@@ -29,6 +17,7 @@ pipeline {
                 }
             }
         }
+        
         stage('Build') { 
             steps {
                 script {
@@ -43,6 +32,7 @@ pipeline {
                 }
             }
         }
+        
         stage('Test') { 
             steps {
                     script {
@@ -57,6 +47,7 @@ pipeline {
                 }
             }
         }
+        
         stage('Deploy') { 
             steps {
                 script {
